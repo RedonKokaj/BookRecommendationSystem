@@ -5,7 +5,6 @@ import java.util.List;
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
-
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -18,6 +17,7 @@ public class Main {
       selectSuggestionMethod();
    }
 
+   //Main menu
    private static void selectSuggestionMethod()
    {
       final JFrame frame = new JFrame("Book Suggestion Menu");
@@ -374,6 +374,7 @@ public class Main {
       frame.setVisible(true);
    }
 
+   //Book description
    private static void showBookDescription(String descriptionRetrieved) {
       final JFrame frame = new JFrame("Book Suggestion");
       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -414,23 +415,28 @@ public class Main {
       frame.setVisible(true);
    }
 
+   //GET description
    private static String retrieveDescription(String selectedBook)
    {
       return connection.retrieveDescription(selectedBook);
    }
 
+   //GET categories
    private static List < String > collectCategories() {
       return connection.retrieveCategories();
    }
 
+   //GET books
    private static List < String > collectBooks() {
       return connection.retrieveBooks();
    }
 
+   //GET category starting from book
    private static String getBookCategory(String bookTitle) {
       return connection.getBookCategory(bookTitle);
    }
 
+   //GET reccomendation
    private static List < String > requestSuggestion(String category) {
       return connection.suggestBook(category);
    }
