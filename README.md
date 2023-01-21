@@ -33,8 +33,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Redon Kokaj
 
-Acknowledgments
+<h3>Inspiration</h3>
 
-Inspiration
 This was a university project.
 Note : The database used for this project is pretty small so it won't be exacly the gest user experience ever, but it still does the recommendation at least.
