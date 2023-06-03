@@ -36,4 +36,4 @@ Redon Kokaj
 <h3>Inspiration</h3>
 
 This was a university project.
-Note : The database used for this project is pretty small so it won't be exacly the gest user experience ever, but it still does the recommendation at least.
+Note : The database used for this project is pretty small so it won't be exacly the best user experience ever, but it still gives a basic recommendation.
